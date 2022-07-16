@@ -1,160 +1,55 @@
--- Gui to Lua
--- Version: 3.2
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+	Name = "Welcome",
+	Content = "Welcome To VOLTAIRE!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local Window = OrionLib:MakeWindow({Name = "VOLTAIRE", HidePremium = false, SaveConfig = true, IntroIcon = "" , IntroText = "Loading VOLTAIRE..." , ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "HOME",
+	Icon = "",
+	PremiumOnly = false
 
--- Instances:
+})
+Tab:AddParagraph("Setting Up.","Welcome to VOLTAIRE! Your essential script hub. We have multiple selections of scripts ranging from ADMIN all the way to other hubs!")
+Tab:AddParagraph("Navigation.","VOLTAIRE's simple UI will make it easy to navigate every script.")
+Tab:AddParagraph("Why VOLTAIRE?.","It's simple! a script hub made by exploiters for exploiters. Using the communities resources to bring you the most simple and useful script hubs, all FREE!")
+local Tab = Window:MakeTab({
+	Name = "ADMIN",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Run CMD X!",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+      		print("button pressed")
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "ESP",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Run Unnamed ESP!",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", true))()
+      		print("button pressed")
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "UNV AIMBOT",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Run Universal Aimbot!",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
+      		print("button pressed")
+  	end    
+})
 
-local VOLTAIRE = Instance.new("ScreenGui")
-local Background = Instance.new("Frame")
-local otherbg = Instance.new("Frame")
-local a = Instance.new("Frame")
-local Scripts = Instance.new("Frame")
-local ADMIN = Instance.new("TextButton")
-local AIMBOT = Instance.new("TextButton")
-local ESP = Instance.new("TextButton")
-local Exit = Instance.new("TextButton")
-local something = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local Frame = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
-local ImageLabel_2 = Instance.new("ImageLabel")
-
---Properties:
-
-VOLTAIRE.Name = "VOLTAIRE"
-VOLTAIRE.Parent = game.CoreGui
-Background.Name = "Background"
-Background.Parent = VOLTAIRE
-Background.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Background.Position = UDim2.new(0.27367574, 0, 0.265605867, 0)
-Background.Size = UDim2.new(0, 563, 0, 370)
-
-otherbg.Name = "otherbg"
-otherbg.Parent = Background
-otherbg.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-otherbg.BorderSizePixel = 0
-otherbg.Position = UDim2.new(0.0128639042, 0, 0.0296569467, 0)
-otherbg.Size = UDim2.new(0, 548, 0, 63)
-
-a.Name = "a"
-a.Parent = otherbg
-a.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-a.BorderSizePixel = 0
-a.Position = UDim2.new(-0.000516752712, 0, 0.990948081, 0)
-a.Size = UDim2.new(0, 548, 0, 284)
-
-Scripts.Name = "Scripts"
-Scripts.Parent = Background
-Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Scripts.BackgroundTransparency = 1.000
-Scripts.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Scripts.Position = UDim2.new(0, 0, 0.199927256, 0)
-Scripts.Size = UDim2.new(0, 563, 0, 296)
-
-ADMIN.Name = "ADMIN"
-ADMIN.Parent = Scripts
-ADMIN.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
-ADMIN.BorderSizePixel = 0
-ADMIN.Position = UDim2.new(0.024866784, 0, 0.128378376, 0)
-ADMIN.Size = UDim2.new(0, 142, 0, 46)
-ADMIN.Font = Enum.Font.SourceSansItalic
-ADMIN.Text = "FE ADMIN"
-ADMIN.TextColor3 = Color3.fromRGB(227, 227, 227)
-ADMIN.TextSize = 28.000
-ADMIN.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
-ADMIN.TextStrokeTransparency = 0.000
-ADMIN.Mousebutton1Click:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-end)
-
-AIMBOT.Name = "AIMBOT"
-AIMBOT.Parent = Scripts
-AIMBOT.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
-AIMBOT.BorderSizePixel = 0
-AIMBOT.Position = UDim2.new(0.024866784, 0, 0.354729712, 0)
-AIMBOT.Size = UDim2.new(0, 142, 0, 46)
-AIMBOT.Font = Enum.Font.SourceSansItalic
-AIMBOT.Text = "ESP"
-AIMBOT.TextColor3 = Color3.fromRGB(227, 227, 227)
-AIMBOT.TextSize = 28.000
-AIMBOT.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
-AIMBOT.TextStrokeTransparency = 0.000
-AIMBOT.Mousebutton1Click:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua"))()
-end)
-
-ESP.Name = "ESP"
-ESP.Parent = Scripts
-ESP.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
-ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.024866784, 0, 0.581081033, 0)
-ESP.Size = UDim2.new(0, 142, 0, 46)
-ESP.Font = Enum.Font.SourceSansItalic
-ESP.Text = "UNV AIMBOT"
-ESP.TextColor3 = Color3.fromRGB(227, 227, 227)
-ESP.TextSize = 28.000
-ESP.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
-ESP.TextStrokeTransparency = 0.000
-ESP.Mousebutton1Click:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-end)
-
-Exit.Name = "Exit"
-Exit.Parent = Background
-Exit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Exit.BorderSizePixel = 0
-Exit.Position = UDim2.new(0.834527731, 0, 0.0458144732, 0)
-Exit.Size = UDim2.new(0, 67, 0, 50)
-Exit.Font = Enum.Font.SourceSans
-Exit.Text = "X"
-Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
-Exit.TextSize = 50.000
-Exit.MouseButton1Click:connect(function()
-	Background.Visible = false
-end)
-
-something.Name = "something"
-something.Parent = Background
-something.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
-something.BorderSizePixel = 0
-something.Position = UDim2.new(0.323698699, 0, 0.316143483, 0)
-something.Size = UDim2.new(0, 198, 0, 190)
-
-TextLabel.Parent = something
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.00174030662, 0, -0.0424462855, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Welcome to VOLTAIRE!"
-TextLabel.TextColor3 = Color3.fromRGB(209, 209, 209)
-TextLabel.TextSize = 19.000
-
-TextLabel_2.Parent = something
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(-0.00174030662, 0, 0.104989618, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSansItalic
-TextLabel_2.Text = "CHANGELOG:"
-TextLabel_2.TextColor3 = Color3.fromRGB(209, 209, 209)
-TextLabel_2.TextSize = 19.000
-
-Frame.Parent = Background
-Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Frame.Position = UDim2.new(0.0248667859, 0, 0.0432432443, 0)
-Frame.Size = UDim2.new(0, 353, 0, 50)
-
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.155807361, 0, 0.0199999996, 0)
-ImageLabel.Size = UDim2.new(0, 225, 0, 50)
-ImageLabel.Image = "rbxassetid://10239719253"
-
-ImageLabel_2.Parent = Frame
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BackgroundTransparency = 1.000
-ImageLabel_2.Position = UDim2.new(1, 0, 3.59842229, 0)
-ImageLabel_2.Size = UDim2.new(0, 188, 0, 167)
-ImageLabel_2.Image = "rbxassetid://8137489692"
+OrionLib:Init()
