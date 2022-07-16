@@ -15,13 +15,14 @@ local ADMIN = Instance.new("TextButton")
 local AIMBOT = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
 local Background_2 = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
-local Background_3 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
+local Another = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
 
 --Properties:
 
@@ -112,7 +113,7 @@ AIMBOT.TextSize = 28.000
 AIMBOT.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
 AIMBOT.TextStrokeTransparency = 0.000
 AIMBOT.Mousebutton1Click:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua"))()
 end)
 
 ESP.Name = "ESP"
@@ -133,26 +134,12 @@ end)
 
 Background_2.Name = "Background"
 Background_2.Parent = Background
-Background_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background_2.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
 Background_2.BorderSizePixel = 0
-Background_2.Position = UDim2.new(0.0540058687, 0, 0.0424062386, 0)
-Background_2.Size = UDim2.new(0, 391, 0, 51)
+Background_2.Position = UDim2.new(0.701274931, 0, 0.247464359, 0)
+Background_2.Size = UDim2.new(0, 143, 0, 245)
 
-ImageLabel.Parent = Background_2
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.115107916, 0, 0.0588235334, 0)
-ImageLabel.Size = UDim2.new(0, 214, 0, 44)
-ImageLabel.Image = "rbxassetid://10239719253"
-
-Background_3.Name = "Background"
-Background_3.Parent = Background
-Background_3.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
-Background_3.BorderSizePixel = 0
-Background_3.Position = UDim2.new(0.701274931, 0, 0.247464359, 0)
-Background_3.Size = UDim2.new(0, 143, 0, 245)
-
-TextLabel_3.Parent = Background_3
+TextLabel_3.Parent = Background_2
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.Position = UDim2.new(0, 0, -0.0367346928, 0)
@@ -162,7 +149,7 @@ TextLabel_3.Text = "CREDITS:"
 TextLabel_3.TextColor3 = Color3.fromRGB(221, 221, 221)
 TextLabel_3.TextSize = 38.000
 
-TextLabel_4.Parent = Background_3
+TextLabel_4.Parent = Background_2
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.Position = UDim2.new(0, 0, 0.171428576, 0)
@@ -174,7 +161,7 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 38.000
 TextLabel_4.TextWrapped = true
 
-TextLabel_5.Parent = Background_3
+TextLabel_5.Parent = Background_2
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.Position = UDim2.new(0, 0, 0.253061235, 0)
@@ -186,7 +173,7 @@ TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 38.000
 TextLabel_5.TextWrapped = true
 
-TextLabel_6.Parent = Background_3
+TextLabel_6.Parent = Background_2
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.Position = UDim2.new(0, 0, 0.342857152, 0)
@@ -198,7 +185,7 @@ TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 38.000
 TextLabel_6.TextWrapped = true
 
-TextLabel_7.Parent = Background_3
+TextLabel_7.Parent = Background_2
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.BackgroundTransparency = 1.000
 TextLabel_7.Position = UDim2.new(0, 0, 0.436734706, 0)
@@ -210,35 +197,30 @@ TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 38.000
 TextLabel_7.TextWrapped = true
 
--- Scripts:
+Another.Name = "Another"
+Another.Parent = Background_2
+Another.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Another.BorderSizePixel = 0
+Another.Position = UDim2.new(-2.66627383, 0, -0.304532558, 0)
+Another.Size = UDim2.new(0, 391, 0, 51)
 
-local function GIFB_fake_script() -- ADMIN.LocalScript 
-	local script = Instance.new('LocalScript', ADMIN)
+ImageLabel.Parent = Another
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.115107916, 0, 0.0588235334, 0)
+ImageLabel.Size = UDim2.new(0, 214, 0, 44)
+ImageLabel.Image = "rbxassetid://10239719253"
 
-	ADMIN.Mousebutton1Click:connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-	end)
-	
-	
-end
-coroutine.wrap(GIFB_fake_script)()
-local function GCERMOI_fake_script() -- AIMBOT.LocalScript 
-	local script = Instance.new('LocalScript', AIMBOT)
-
-	AIMBOT.Mousebutton1Click:connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-	end)
-	
-	
-end
-coroutine.wrap(GCERMOI_fake_script)()
-local function FDZIK_fake_script() -- ESP.LocalScript 
-	local script = Instance.new('LocalScript', ESP)
-
-	ESP.Mousebutton1Click:connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-	end)
-	
-	
-end
-coroutine.wrap(FDZIK_fake_script)()
+Exit.Name = "Exit"
+Exit.Parent = Background
+Exit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.834527731, 0, 0.0458144732, 0)
+Exit.Size = UDim2.new(0, 67, 0, 50)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+Exit.TextSize = 50.000
+Exit.MouseButton1Click:connect(function()
+	Background.Visible = false
+end)
