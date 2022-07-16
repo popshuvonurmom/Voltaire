@@ -5,9 +5,9 @@
 
 local VOLTAIRE = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
-local bgarea = Instance.new("Frame")
 local otherbg = Instance.new("Frame")
-local otherbg_2 = Instance.new("Frame")
+local a = Instance.new("Frame")
+local something = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local Scripts = Instance.new("Frame")
@@ -15,16 +15,13 @@ local ADMIN = Instance.new("TextButton")
 local AIMBOT = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
 local Background_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
 local Background_3 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
-local Background_4 = Instance.new("Frame")
-local Background_5 = Instance.new("Frame")
-local Background_6 = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -37,13 +34,6 @@ Background.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Background.Position = UDim2.new(0.27367574, 0, 0.272949815, 0)
 Background.Size = UDim2.new(0, 563, 0, 370)
 
-bgarea.Name = "bgarea"
-bgarea.Parent = Background
-bgarea.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-bgarea.BorderSizePixel = 0
-bgarea.Position = UDim2.new(0.0128638912, 0, 0.183717638, 0)
-bgarea.Size = UDim2.new(0, 548, 0, 294)
-
 otherbg.Name = "otherbg"
 otherbg.Parent = Background
 otherbg.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
@@ -51,14 +41,21 @@ otherbg.BorderSizePixel = 0
 otherbg.Position = UDim2.new(0.0128639042, 0, 0.0296569467, 0)
 otherbg.Size = UDim2.new(0, 548, 0, 63)
 
-otherbg_2.Name = "otherbg"
-otherbg_2.Parent = Background
-otherbg_2.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
-otherbg_2.BorderSizePixel = 0
-otherbg_2.Position = UDim2.new(0.323698699, 0, 0.316143483, 0)
-otherbg_2.Size = UDim2.new(0, 198, 0, 190)
+a.Name = "a"
+a.Parent = otherbg
+a.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+a.BorderSizePixel = 0
+a.Position = UDim2.new(-0.000176422793, 0, 1, 0)
+a.Size = UDim2.new(0, 548, 0, 284)
 
-TextLabel.Parent = otherbg_2
+something.Name = "something"
+something.Parent = Background
+something.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+something.BorderSizePixel = 0
+something.Position = UDim2.new(0.323698699, 0, 0.316143483, 0)
+something.Size = UDim2.new(0, 198, 0, 190)
+
+TextLabel.Parent = something
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(-0.00174030662, 0, -0.0424462855, 0)
@@ -68,7 +65,7 @@ TextLabel.Text = "Welcome to VOLTAIRE!"
 TextLabel.TextColor3 = Color3.fromRGB(209, 209, 209)
 TextLabel.TextSize = 19.000
 
-TextLabel_2.Parent = otherbg_2
+TextLabel_2.Parent = something
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(-0.00174030662, 0, 0.104989618, 0)
@@ -98,6 +95,9 @@ ADMIN.TextColor3 = Color3.fromRGB(227, 227, 227)
 ADMIN.TextSize = 28.000
 ADMIN.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
 ADMIN.TextStrokeTransparency = 0.000
+ADMIN.Mousebutton1Click:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+end)
 
 AIMBOT.Name = "AIMBOT"
 AIMBOT.Parent = Scripts
@@ -111,6 +111,9 @@ AIMBOT.TextColor3 = Color3.fromRGB(227, 227, 227)
 AIMBOT.TextSize = 28.000
 AIMBOT.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
 AIMBOT.TextStrokeTransparency = 0.000
+AIMBOT.Mousebutton1Click:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+end)
 
 ESP.Name = "ESP"
 ESP.Parent = Scripts
@@ -124,13 +127,23 @@ ESP.TextColor3 = Color3.fromRGB(227, 227, 227)
 ESP.TextSize = 28.000
 ESP.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
 ESP.TextStrokeTransparency = 0.000
+ESP.Mousebutton1Click:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+end)
 
 Background_2.Name = "Background"
 Background_2.Parent = Background
 Background_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Background_2.BorderSizePixel = 0
-Background_2.Position = UDim2.new(0.871433675, 0, 0.0424063019, 0)
-Background_2.Size = UDim2.new(0, 35, 0, 51)
+Background_2.Position = UDim2.new(0.0540058687, 0, 0.0424062386, 0)
+Background_2.Size = UDim2.new(0, 391, 0, 51)
+
+ImageLabel.Parent = Background_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.115107916, 0, 0.0588235334, 0)
+ImageLabel.Size = UDim2.new(0, 214, 0, 44)
+ImageLabel.Image = "rbxassetid://10239719253"
 
 Background_3.Name = "Background"
 Background_3.Parent = Background
@@ -197,37 +210,9 @@ TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 38.000
 TextLabel_7.TextWrapped = true
 
-Background_4.Name = "Background"
-Background_4.Parent = Background
-Background_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Background_4.BorderSizePixel = 0
-Background_4.Position = UDim2.new(0.715049744, 0, 0.0424063019, 0)
-Background_4.Size = UDim2.new(0, 35, 0, 51)
-
-Background_5.Name = "Background"
-Background_5.Parent = Background
-Background_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Background_5.BorderSizePixel = 0
-Background_5.Position = UDim2.new(0.791347921, 0, 0.0424063019, 0)
-Background_5.Size = UDim2.new(0, 35, 0, 51)
-
-Background_6.Name = "Background"
-Background_6.Parent = VOLTAIRE
-Background_6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Background_6.BorderSizePixel = 0
-Background_6.Position = UDim2.new(0.284911722, 0, 0.293757647, 0)
-Background_6.Size = UDim2.new(0, 278, 0, 51)
-
-ImageLabel.Parent = Background_6
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.115107916, 0, 0.0588235334, 0)
-ImageLabel.Size = UDim2.new(0, 214, 0, 44)
-ImageLabel.Image = "rbxassetid://10239719253"
-
 -- Scripts:
 
-local function FDCFX_fake_script() -- ADMIN.LocalScript 
+local function GIFB_fake_script() -- ADMIN.LocalScript 
 	local script = Instance.new('LocalScript', ADMIN)
 
 	ADMIN.Mousebutton1Click:connect(function()
@@ -236,8 +221,8 @@ local function FDCFX_fake_script() -- ADMIN.LocalScript
 	
 	
 end
-coroutine.wrap(FDCFX_fake_script)()
-local function VDFVTH_fake_script() -- AIMBOT.LocalScript 
+coroutine.wrap(GIFB_fake_script)()
+local function GCERMOI_fake_script() -- AIMBOT.LocalScript 
 	local script = Instance.new('LocalScript', AIMBOT)
 
 	AIMBOT.Mousebutton1Click:connect(function()
@@ -246,8 +231,8 @@ local function VDFVTH_fake_script() -- AIMBOT.LocalScript
 	
 	
 end
-coroutine.wrap(VDFVTH_fake_script)()
-local function LUBPCDS_fake_script() -- ESP.LocalScript 
+coroutine.wrap(GCERMOI_fake_script)()
+local function FDZIK_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	ESP.Mousebutton1Click:connect(function()
@@ -256,4 +241,4 @@ local function LUBPCDS_fake_script() -- ESP.LocalScript
 	
 	
 end
-coroutine.wrap(LUBPCDS_fake_script)()
+coroutine.wrap(FDZIK_fake_script)()
