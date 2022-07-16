@@ -22,8 +22,7 @@ local ImageLabel_2 = Instance.new("ImageLabel")
 --Properties:
 
 VOLTAIRE.Name = "VOLTAIRE"
-VOLTAIRE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
+VOLTAIRE.Parent = game.CoreGui
 Background.Name = "Background"
 Background.Parent = VOLTAIRE
 Background.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -159,36 +158,3 @@ ImageLabel_2.BackgroundTransparency = 1.000
 ImageLabel_2.Position = UDim2.new(1, 0, 3.59842229, 0)
 ImageLabel_2.Size = UDim2.new(0, 188, 0, 167)
 ImageLabel_2.Image = "rbxassetid://8137489692"
-
--- Scripts:
-
-local function UXFZI_fake_script() -- ADMIN.LocalScript 
-	local script = Instance.new('LocalScript', ADMIN)
-
-	ADMIN.Mousebutton1Click:connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-	end)
-	
-	
-end
-coroutine.wrap(UXFZI_fake_script)()
-local function KHIKYQ_fake_script() -- AIMBOT.LocalScript 
-	local script = Instance.new('LocalScript', AIMBOT)
-
-	AIMBOT.Mousebutton1Click:connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua"))()
-	end)
-	
-	
-end
-coroutine.wrap(KHIKYQ_fake_script)()
-local function EFUAJ_fake_script() -- ESP.LocalScript 
-	local script = Instance.new('LocalScript', ESP)
-
-	ESP.Mousebutton1Click:connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-	end)
-	
-	
-end
-coroutine.wrap(EFUAJ_fake_script)()
