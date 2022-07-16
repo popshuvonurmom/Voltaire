@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local VOLTAIRE = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local bgarea = Instance.new("Frame")
 local otherbg = Instance.new("Frame")
@@ -28,10 +28,11 @@ local TextLabel_7 = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+VOLTAIRE.Name = "VOLTAIRE"
+VOLTAIRE.Parent = game.CoreGui
 
 Background.Name = "Background"
-Background.Parent = ScreenGui
+Background.Parent = VOLTAIRE
 Background.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Background.Position = UDim2.new(0.27367574, 0, 0.272949815, 0)
 Background.Size = UDim2.new(0, 563, 0, 370)
@@ -125,14 +126,14 @@ ESP.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
 ESP.TextStrokeTransparency = 0.000
 
 Background_2.Name = "Background"
-Background_2.Parent = ScreenGui
+Background_2.Parent = VOLTAIRE
 Background_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Background_2.BorderSizePixel = 0
 Background_2.Position = UDim2.new(0.599518418, 0, 0.293757647, 0)
 Background_2.Size = UDim2.new(0, 35, 0, 51)
 
 Background_3.Name = "Background"
-Background_3.Parent = ScreenGui
+Background_3.Parent = VOLTAIRE
 Background_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Background_3.BorderSizePixel = 0
 Background_3.Position = UDim2.new(0.284911722, 0, 0.293757647, 0)
@@ -146,21 +147,21 @@ ImageLabel.Size = UDim2.new(0, 214, 0, 44)
 ImageLabel.Image = "rbxassetid://10239719253"
 
 Background_4.Name = "Background"
-Background_4.Parent = ScreenGui
+Background_4.Parent = VOLTAIRE
 Background_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Background_4.BorderSizePixel = 0
 Background_4.Position = UDim2.new(0.681380391, 0, 0.293757647, 0)
 Background_4.Size = UDim2.new(0, 35, 0, 51)
 
 Background_5.Name = "Background"
-Background_5.Parent = ScreenGui
+Background_5.Parent = VOLTAIRE
 Background_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Background_5.BorderSizePixel = 0
 Background_5.Position = UDim2.new(0.640449405, 0, 0.293757647, 0)
 Background_5.Size = UDim2.new(0, 35, 0, 51)
 
 Background_6.Name = "Background"
-Background_6.Parent = ScreenGui
+Background_6.Parent = VOLTAIRE
 Background_6.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
 Background_6.BorderSizePixel = 0
 Background_6.Position = UDim2.new(0.594703019, 0, 0.388004899, 0)
@@ -226,7 +227,7 @@ TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function PRQGF_fake_script() -- ADMIN.LocalScript 
+local function QYVSVQS_fake_script() -- ADMIN.LocalScript 
 	local script = Instance.new('LocalScript', ADMIN)
 
 	ADMIN.Mousebutton1Click:connect(function()
@@ -235,8 +236,8 @@ local function PRQGF_fake_script() -- ADMIN.LocalScript
 	
 	
 end
-coroutine.wrap(PRQGF_fake_script)()
-local function LNXV_fake_script() -- AIMBOT.LocalScript 
+coroutine.wrap(QYVSVQS_fake_script)()
+local function SMWQX_fake_script() -- AIMBOT.LocalScript 
 	local script = Instance.new('LocalScript', AIMBOT)
 
 	AIMBOT.Mousebutton1Click:connect(function()
@@ -245,8 +246,8 @@ local function LNXV_fake_script() -- AIMBOT.LocalScript
 	
 	
 end
-coroutine.wrap(LNXV_fake_script)()
-local function KYLV_fake_script() -- ESP.LocalScript 
+coroutine.wrap(SMWQX_fake_script)()
+local function RPPCPUM_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	ESP.Mousebutton1Click:connect(function()
@@ -255,4 +256,4 @@ local function KYLV_fake_script() -- ESP.LocalScript
 	
 	
 end
-coroutine.wrap(KYLV_fake_script)()
+coroutine.wrap(RPPCPUM_fake_script)()
