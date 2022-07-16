@@ -16,15 +16,15 @@ local AIMBOT = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
 local Background_2 = Instance.new("Frame")
 local Background_3 = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
-local Background_4 = Instance.new("Frame")
-local Background_5 = Instance.new("Frame")
-local Background_6 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
+local Background_4 = Instance.new("Frame")
+local Background_5 = Instance.new("Frame")
+local Background_6 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -126,48 +126,20 @@ ESP.TextStrokeColor3 = Color3.fromRGB(134, 134, 134)
 ESP.TextStrokeTransparency = 0.000
 
 Background_2.Name = "Background"
-Background_2.Parent = VOLTAIRE
+Background_2.Parent = Background
 Background_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Background_2.BorderSizePixel = 0
-Background_2.Position = UDim2.new(0.599518418, 0, 0.293757647, 0)
+Background_2.Position = UDim2.new(0.871433675, 0, 0.0424063019, 0)
 Background_2.Size = UDim2.new(0, 35, 0, 51)
 
 Background_3.Name = "Background"
-Background_3.Parent = VOLTAIRE
-Background_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background_3.Parent = Background
+Background_3.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
 Background_3.BorderSizePixel = 0
-Background_3.Position = UDim2.new(0.284911722, 0, 0.293757647, 0)
-Background_3.Size = UDim2.new(0, 278, 0, 51)
+Background_3.Position = UDim2.new(0.701274931, 0, 0.247464359, 0)
+Background_3.Size = UDim2.new(0, 143, 0, 245)
 
-ImageLabel.Parent = Background_3
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.115107916, 0, 0.0588235334, 0)
-ImageLabel.Size = UDim2.new(0, 214, 0, 44)
-ImageLabel.Image = "rbxassetid://10239719253"
-
-Background_4.Name = "Background"
-Background_4.Parent = VOLTAIRE
-Background_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Background_4.BorderSizePixel = 0
-Background_4.Position = UDim2.new(0.681380391, 0, 0.293757647, 0)
-Background_4.Size = UDim2.new(0, 35, 0, 51)
-
-Background_5.Name = "Background"
-Background_5.Parent = VOLTAIRE
-Background_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Background_5.BorderSizePixel = 0
-Background_5.Position = UDim2.new(0.640449405, 0, 0.293757647, 0)
-Background_5.Size = UDim2.new(0, 35, 0, 51)
-
-Background_6.Name = "Background"
-Background_6.Parent = VOLTAIRE
-Background_6.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
-Background_6.BorderSizePixel = 0
-Background_6.Position = UDim2.new(0.594703019, 0, 0.388004899, 0)
-Background_6.Size = UDim2.new(0, 143, 0, 245)
-
-TextLabel_3.Parent = Background_6
+TextLabel_3.Parent = Background_3
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.Position = UDim2.new(0, 0, -0.0367346928, 0)
@@ -177,7 +149,7 @@ TextLabel_3.Text = "CREDITS:"
 TextLabel_3.TextColor3 = Color3.fromRGB(221, 221, 221)
 TextLabel_3.TextSize = 38.000
 
-TextLabel_4.Parent = Background_6
+TextLabel_4.Parent = Background_3
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.Position = UDim2.new(0, 0, 0.171428576, 0)
@@ -189,7 +161,7 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 38.000
 TextLabel_4.TextWrapped = true
 
-TextLabel_5.Parent = Background_6
+TextLabel_5.Parent = Background_3
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.Position = UDim2.new(0, 0, 0.253061235, 0)
@@ -201,7 +173,7 @@ TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 38.000
 TextLabel_5.TextWrapped = true
 
-TextLabel_6.Parent = Background_6
+TextLabel_6.Parent = Background_3
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.Position = UDim2.new(0, 0, 0.342857152, 0)
@@ -213,7 +185,7 @@ TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 38.000
 TextLabel_6.TextWrapped = true
 
-TextLabel_7.Parent = Background_6
+TextLabel_7.Parent = Background_3
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.BackgroundTransparency = 1.000
 TextLabel_7.Position = UDim2.new(0, 0, 0.436734706, 0)
@@ -225,9 +197,37 @@ TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 38.000
 TextLabel_7.TextWrapped = true
 
+Background_4.Name = "Background"
+Background_4.Parent = Background
+Background_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background_4.BorderSizePixel = 0
+Background_4.Position = UDim2.new(0.715049744, 0, 0.0424063019, 0)
+Background_4.Size = UDim2.new(0, 35, 0, 51)
+
+Background_5.Name = "Background"
+Background_5.Parent = Background
+Background_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background_5.BorderSizePixel = 0
+Background_5.Position = UDim2.new(0.791347921, 0, 0.0424063019, 0)
+Background_5.Size = UDim2.new(0, 35, 0, 51)
+
+Background_6.Name = "Background"
+Background_6.Parent = VOLTAIRE
+Background_6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background_6.BorderSizePixel = 0
+Background_6.Position = UDim2.new(0.284911722, 0, 0.293757647, 0)
+Background_6.Size = UDim2.new(0, 278, 0, 51)
+
+ImageLabel.Parent = Background_6
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.115107916, 0, 0.0588235334, 0)
+ImageLabel.Size = UDim2.new(0, 214, 0, 44)
+ImageLabel.Image = "rbxassetid://10239719253"
+
 -- Scripts:
 
-local function QYVSVQS_fake_script() -- ADMIN.LocalScript 
+local function FDCFX_fake_script() -- ADMIN.LocalScript 
 	local script = Instance.new('LocalScript', ADMIN)
 
 	ADMIN.Mousebutton1Click:connect(function()
@@ -236,8 +236,8 @@ local function QYVSVQS_fake_script() -- ADMIN.LocalScript
 	
 	
 end
-coroutine.wrap(QYVSVQS_fake_script)()
-local function SMWQX_fake_script() -- AIMBOT.LocalScript 
+coroutine.wrap(FDCFX_fake_script)()
+local function VDFVTH_fake_script() -- AIMBOT.LocalScript 
 	local script = Instance.new('LocalScript', AIMBOT)
 
 	AIMBOT.Mousebutton1Click:connect(function()
@@ -246,8 +246,8 @@ local function SMWQX_fake_script() -- AIMBOT.LocalScript
 	
 	
 end
-coroutine.wrap(SMWQX_fake_script)()
-local function RPPCPUM_fake_script() -- ESP.LocalScript 
+coroutine.wrap(VDFVTH_fake_script)()
+local function LUBPCDS_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	ESP.Mousebutton1Click:connect(function()
@@ -256,4 +256,4 @@ local function RPPCPUM_fake_script() -- ESP.LocalScript
 	
 	
 end
-coroutine.wrap(RPPCPUM_fake_script)()
+coroutine.wrap(LUBPCDS_fake_script)()
