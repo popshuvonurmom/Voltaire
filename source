@@ -15,6 +15,16 @@ local Tab = Window:MakeTab({
 Tab:AddParagraph("Setting Up.","Welcome to VOLTAIRE! Your essential script hub. We have multiple selections of scripts ranging from ADMIN all the way to other hubs!")
 Tab:AddParagraph("Navigation.","VOLTAIRE's simple UI will make it easy to navigate every script.")
 Tab:AddParagraph("Why VOLTAIRE?.","It's simple! a script hub made by exploiters for exploiters. Using the communities resources to bring you the most simple and useful script hubs, all FREE!")
+
+local Tab = Window:MakeTab({
+	Name = "CREDITS",
+	Icon = "rbxassetid://1772084923",
+	PremiumOnly = false
+
+})
+Tab:AddParagraph("Credits.","CMD X - CMD X TEAM.  INF YIELD - INF YIELD TEAM.  FATES ADMIN - FATE TEAM.  ")
+
+
 local Tab = Window:MakeTab({
 	Name = "ADMIN",
 	Icon = "rbxassetid://10046008118",
