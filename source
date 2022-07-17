@@ -8,7 +8,7 @@ OrionLib:MakeNotification({
 local Window = OrionLib:MakeWindow({Name = "VOLTAIRE", HidePremium = false, SaveConfig = true, IntroIcon = "" , IntroText = "Loading VOLTAIRE..." , ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "HOME",
-	Icon = "",
+	Icon = "rbxassetid://1772084923",
 	PremiumOnly = false
 
 })
@@ -17,7 +17,7 @@ Tab:AddParagraph("Navigation.","VOLTAIRE's simple UI will make it easy to naviga
 Tab:AddParagraph("Why VOLTAIRE?.","It's simple! a script hub made by exploiters for exploiters. Using the communities resources to bring you the most simple and useful script hubs, all FREE!")
 local Tab = Window:MakeTab({
 	Name = "ADMIN",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://10046008118",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -27,9 +27,23 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
+Tab:AddButton({
+	Name = "Run INF YIELD!",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      		print("button pressed")
+	end   
+})  
+Tab:AddButton({
+	Name = "Run Fates Admin!",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+      		print("button pressed")
+	end   
+})  
 local Tab = Window:MakeTab({
 	Name = "ESP",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://10046008118",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -40,8 +54,8 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "UNV AIMBOT",
-	Icon = "rbxassetid://4483345998",
+	Name = "AIMBOT",
+	Icon = "rbxassetid://10046008118",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -52,4 +66,28 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "PHAN FORCES",
+	Icon = "rbxassetid://4621599120",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Run UnFair Hub!",
+	Callback = function()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "ARSENAL",
+	Icon = "rbxassetid://4621599120",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Run StrawHook!",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
+      		print("button pressed")
+  	end    
+})
 OrionLib:Init()
